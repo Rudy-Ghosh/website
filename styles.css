@@ -115,3 +115,38 @@ body {
         font-size: 1em;
     }
 }
+/* Submenu styles */
+.sidebar ul li {
+    position: relative;
+}
+
+.sidebar ul .submenu {
+    display: none;
+    list-style: none;
+    padding-left: 15px;
+    margin-top: 10px;
+}
+
+.sidebar ul .submenu li {
+    margin: 8px 0;
+}
+
+.sidebar ul .submenu li a {
+    font-size: 0.95em;
+    color: #7d8282;
+}
+
+.sidebar ul li:hover .submenu {
+    display: block;
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 600px) {
+    .sidebar ul {
+        flex-direction: column;
+    }
+    .sidebar ul .submenu {
+        padding-left: 0;
+    }
+}
+
